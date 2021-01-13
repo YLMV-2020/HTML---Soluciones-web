@@ -89,19 +89,20 @@ BAR CONTENIDO & CERRAR SESION
               <form class="form-horizontal  style-form" action="#">    
                 <div class="form-group"> 
                 <div class="service-icon">
+                  <br>
                     <center>
-                        <!-- <i class="dm-icon fa fa-calendar fa-4x"></i> -->
-                        <h2 class="mb"><i class="fa "></i> Anuncios </h2>
-                        <textarea name="textarea" style="width:550px;height:175px;" disabled></textarea>
-                        <!-- <input type="text"
-                        cols="40" 
-                        rows="5" 
-                        style="width:200px; height:50px;" 
-                        name="Text1" 
-                        id="Text1" 
-                        value="" /> -->
+                      <img src="img/frm - paciente.png" width="10%">
+                      <h2 class="mb"><i class="fa "></i> Pacientes </h2> 
+                      <div class="col" >
+                        <div class="col-xs-3" > 
+                          <input class="form-control"  type="text" placeholder="Nombre o DNI" >                            
+                        </div>
+                        <div class="col-xs-1">
+                          <input type="button" class="btn btn-primary" value="Buscar" />
+                        </div>
+                      </div>
                     </center>
-                </div>
+                  </div>
                 </div>
               </form> 
             </div>
@@ -113,7 +114,6 @@ BAR CONTENIDO & CERRAR SESION
         <div class="row mt">
           <div class="col-lg-12">
             <div class="form-panel">
-              <center><h2 class="mb"><i class="fa "></i>Citas del día</h2></center>
                 <form class="form-horizontal  style-form" action="#">                  
                       
                       <table class="table">
@@ -122,10 +122,9 @@ BAR CONTENIDO & CERRAR SESION
                             <th>#</th>
                             <th>Nombres</th>
                             <th>Apellidos</th>
+                            <th>Edad</th>
                             <th>DNI</th>
-                            <th>Hora</th>
-                            <th>Motivo</th>
-                            <th>Estado</th> 
+                            <th>Celular</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -133,30 +132,33 @@ BAR CONTENIDO & CERRAR SESION
                             <td>1</td>
                             <td>Carlos</td>
                             <td>Márquez Galván</td>
+                            <td>35</td>
                             <td>70123456</td>
-                            <td>4:00 p.m.</td>
-                            <td>Consulta</td>
-                            <td>Atendido</td>
+                            <td>987654321</td>
+                            <td><input type="button" class="btn btn-primary" value="Datos de filiación" /></td>
+                            <td><input type="button" class="btn btn-primary" value="Historial"/></td>
                           </tr>
 
                           <tr>
                             <td>2</td>
                             <td>Marcos</td>
                             <td>Vásquez Díaz</td>
+                            <td>53</td>
                             <td>74153256</td>
-                            <td>5:00 p.m.</td>
-                            <td>Control</td>
-                            <td>Cancelado</td>
+                            <td>983612321</td>
+                            <td><input type="button" class="btn btn-primary" value="Datos de filiación" /></td>
+                            <td><input type="button" class="btn btn-primary" value="Historial"/></td>
                           </tr>
 
                           <tr>
                             <td>3</td>
                             <td>Mariana</td>
                             <td>Chávez Vértiz</td>
+                            <td>30</td>
                             <td>74153293</td>
-                            <td>6:00 p.m.</td>
-                            <td>Control</td>
-                            <td>Pendiente</td>
+                            <td>997654421</td>
+                            <td><input type="button" class="btn btn-primary" value="Datos de filiación" /></td>
+                            <td><input type="button" class="btn btn-primary" value="Historial"/></td>
                           </tr>
                         </tbody>
                       </table>
