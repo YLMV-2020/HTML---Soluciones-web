@@ -22,6 +22,18 @@ Website: http://Alvarez.is/
     light:#ffffff;
 }
 
+*{
+    font-family: 'Chilanka',cursive;
+}
+.contendor-uno button{
+    background: #18d26e;
+    color: white;
+    border-radius: 20px;
+    font-size: 30px;
+    width: 100px;
+    height: 80px;
+}
+
 body {
     color: #797979;
 	background: #eaeaea;

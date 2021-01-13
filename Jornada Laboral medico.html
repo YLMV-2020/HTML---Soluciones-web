@@ -93,65 +93,74 @@ BAR CONTENIDO & CERRAR SESION
                 <form class="form-horizontal  style-form" action="#">                  
                   <br>
                   <center>
-                    <img src="img/frm - paciente.png" width="10%">
-                    <h2 class="mb"><i class="fa "></i> Pacientes </h2>  
+                    <img src="img/frm - jornada.png" width="10%">
+                    <h2 class="mb"><i class="fa "></i> JORNADA LABORAL </h2>  
                   </center>
-                 
-                  <div class="col" >
-                    <div class="col-xs-3" > 
-                      <input class="form-control"  type="text" placeholder="Nombre o DNI" >                            
+                
+
+                  <div class="col">
+                    <label class="col-xs-2">Elegir la fecha laborable:</label>
+                    <div class="col-xs-3">
+                        <div data-date-viewmode="years" data-date-format="dd-mm-yyyy" data-date="01-01-2019" class="">                    
+                        <input type="text" readonly="" value="01-01-2019" size="16" class="form-control"  disabled>
+                        <span class="input-group-btn add-on">
+                          <button class="btn btn-theme" type="button">
+                              <i class="fa fa-calendar" ></i></button>
+                          </span>
+                      </div>                   
                     </div>
-                    <div class="col-xs-1">
-                      <input type="button" class="btn btn-primary" value="Buscar">
-                    </div>
-                    <br><br><br>
-                  </div>
-                      <table class="table">
-                        <thead>
+                  </div> 
+
+                  <br><br><br>
+                  
+                      
+                      <div style="text-align:center;">
+                      <table class="table" border="1" style="margin: 0 auto;">
+                        <thead >
                           <tr>
-                            <th>#</th>
-                            <th>Nombres</th>
-                            <th>Apellidos</th>
-                            <th>Edad</th>
-                            <th>DNI</th>
-                            <th>Celular</th>
+                            <th style="text-align:center;">#</th>
+                            <th style="text-align:center;">Hora de Inicio</th>
+                            <th style="text-align:center;">Hora de Fin</th>
+                           
                           </tr>
                         </thead>
-                        <tbody>
-                          <tr>
+                        <tbody style="text-align:center;">
+                          <tr >
                             <td>1</td>
-                            <td>Carlos</td>
-                            <td>Márquez Galván</td>
-                            <td>35</td>
-                            <td>70123456</td>
-                            <td>987654321</td>
-                            <td><input type="button" class="btn btn-primary" value="Datos de filiación" /></td>
-                            <td><input type="button" class="btn btn-primary" value="Historial"/></td>
+                            <td>9:00</td>
+                            <td>10:00</td>
                           </tr>
 
                           <tr>
                             <td>2</td>
-                            <td>Marcos</td>
-                            <td>Vásquez Díaz</td>
-                            <td>53</td>
-                            <td>74153256</td>
-                            <td>983612321</td>
-                            <td><input type="button" class="btn btn-primary" value="Datos de filiación" /></td>
-                            <td><input type="button" class="btn btn-primary" value="Historial"/></td>
+                            <td>10:00</td>
+                            <td>11:00</td>
+                           
                           </tr>
 
                           <tr>
                             <td>3</td>
-                            <td>Mariana</td>
-                            <td>Chávez Vértiz</td>
-                            <td>30</td>
-                            <td>74153293</td>
-                            <td>997654421</td>
-                            <td><input type="button" class="btn btn-primary" value="Datos de filiación" /></td>
-                            <td><input type="button" class="btn btn-primary" value="Historial"/></td>
+                            <td>11:00</td>
+                            <td>12:00</td>
+                            
+                          </tr>
+
+                          <tr>
+                            <td>4</td>
+                            <td>16:00</td>
+                            <td>17:00</td>
+                            
+                          </tr>
+
+                          <tr>
+                            <td>5</td>
+                            <td>17:00</td>
+                            <td>18:00</td>
+                            
                           </tr>
                         </tbody>
                       </table>
+                    </div>
                     </form>  
                </div>
              </div>
