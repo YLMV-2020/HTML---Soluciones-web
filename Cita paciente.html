@@ -56,21 +56,21 @@ BAR CONTENIDO & CERRAR SESION
                   <li class="mt">
                       <a href="Pacientes medico.html">
                       <i class="fa fa-patient"></i>
-                      <span>Pacientes</span>
+                      <span>Datos de filiación</span>
                     </a>
                   </li>
 
                   <li class="mt">
                     <a href="">
                     <i class="fa fa-cita"></i>
-                    <span>Profesionales</span>
+                    <span>Citas</span>
                     </a>
                 </li>
 
                   <li class="mt">
                     <a href="javascript:;">
                       <i class="fa fa-Consulta"></i>
-                      <span>Reporte de pagos</span>
+                      <span>Caja</span>
                     </a>
                       
                   </li>
@@ -93,65 +93,85 @@ BAR CONTENIDO & CERRAR SESION
                 <form class="form-horizontal  style-form" action="#">                  
                   <br>
                   <center>
-                    <img src="img/frm - paciente.png" width="10%">
-                    <h3 class="mb"><i class="fa "></i> PACIENTES </h3>  
+                    <img src="img/frm - citas.png" width="10%">
+                    <h3 class="mb"><i class="fa "></i> CITAS </h3>  
                   </center>
-                 
-                  <div class="col" >
-                    <div class="col-xs-3" > 
-                      <input class="form-control"  type="text" placeholder="Nombre o DNI" >                            
+
+                  <div class="col">
+                    <label class=" col-xs-1 col-xs-1 control-label">Fecha de citas:</label>
+                    <div class="col-xs-2">
+                        <div data-date-viewmode="years" data-date-format="dd-mm-yyyy" data-date="01-01-2019" class="">                    
+                        <input type="text" readonly="" value="01-01-2019" size="16" class="form-control"  disabled>
+                        <span class="input-group-btn add-on">
+                          <button class="btn btn-theme" type="button">
+                              <i class="fa fa-calendar" ></i></button>
+                          </span>
+                      </div>                   
                     </div>
-                    <div class="col-xs-1">
+                  </div> 
+
+                  <div class="col">
+                    <label class="col-xs-1 control-label"></label> 
+                    <div class="col-xs-1" > 
                       <input type="button" class="btn btn-primary" value="Buscar">
                     </div>
-                    <br><br><br>
-                  </div>
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th>#</th>
-                            <th>Nombres</th>
-                            <th>Apellidos</th>
-                            <th>Edad</th>
-                            <th>DNI</th>
-                            <th>Celular</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>1</td>
-                            <td>Carlos</td>
-                            <td>Márquez Galván</td>
-                            <td>35</td>
-                            <td>70123456</td>
-                            <td>987654321</td>
-                            <td><input type="button" class="btn btn-primary" value="Datos de filiación" /></td>
-                            <td><input type="button" class="btn btn-primary" value="Historial"/></td>
-                          </tr>
+                  </div>      
 
-                          <tr>
-                            <td>2</td>
-                            <td>Marcos</td>
-                            <td>Vásquez Díaz</td>
-                            <td>53</td>
-                            <td>74153256</td>
-                            <td>983612321</td>
-                            <td><input type="button" class="btn btn-primary" value="Datos de filiación" /></td>
-                            <td><input type="button" class="btn btn-primary" value="Historial"/></td>
-                          </tr>
+                  <div class="col">
+                    <label class=""></label> 
+                    <div class="col-xs-1" > 
+                      <input type="button" class="btn btn-primary" value="Agregar cita">
+                    </div>
+                  </div>   
+                  <br><br><br>
 
-                          <tr>
-                            <td>3</td>
-                            <td>Mariana</td>
-                            <td>Chávez Vértiz</td>
-                            <td>30</td>
-                            <td>74153293</td>
-                            <td>997654421</td>
-                            <td><input type="button" class="btn btn-primary" value="Datos de filiación" /></td>
-                            <td><input type="button" class="btn btn-primary" value="Historial"/></td>
-                          </tr>
-                        </tbody>
-                      </table>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>DNI</th>
+                        <th>Hora</th>
+                        <th>Motivo</th>
+                        <th>Estado</th> 
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Carlos</td>
+                        <td>Márquez Galván</td>
+                        <td>70123456</td>
+                        <td>4:00 p.m.</td>
+                        <td>Consulta</td>
+                        <td>Atendido</td>
+                        <td><input type="button" class="btn btn-primary" value="Pagar"/></td>
+                      </tr>
+
+                      <tr>
+                        <td>2</td>
+                        <td>Marcos</td>
+                        <td>Vásquez Díaz</td>
+                        <td>74153256</td>
+                        <td>5:00 p.m.</td>
+                        <td>Control</td>
+                        <td>Cancelado</td>
+                      </tr>
+
+                      <tr>
+                        <td>3</td>
+                        <td>Mariana</td>
+                        <td>Chávez Vértiz</td>
+                        <td>74153293</td>
+                        <td>6:00 p.m.</td>
+                        <td>Control</td>
+                        <td>Pendiente</td>
+                        <td><input type="button" class="btn btn-primary" value="Cancelar"/></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                      
                     </form>  
                </div>
              </div>

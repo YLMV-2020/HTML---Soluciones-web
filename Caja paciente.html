@@ -56,21 +56,21 @@ BAR CONTENIDO & CERRAR SESION
                   <li class="mt">
                       <a href="Pacientes medico.html">
                       <i class="fa fa-patient"></i>
-                      <span>Pacientes</span>
+                      <span>Datos de filiación</span>
                     </a>
                   </li>
 
                   <li class="mt">
                     <a href="">
                     <i class="fa fa-cita"></i>
-                    <span>Profesionales</span>
+                    <span>Citas</span>
                     </a>
                 </li>
 
                   <li class="mt">
                     <a href="javascript:;">
                       <i class="fa fa-Consulta"></i>
-                      <span>Reporte de pagos</span>
+                      <span>Pagos</span>
                     </a>
                       
                   </li>
@@ -93,66 +93,41 @@ BAR CONTENIDO & CERRAR SESION
                 <form class="form-horizontal  style-form" action="#">                  
                   <br>
                   <center>
-                    <img src="img/frm - paciente.png" width="10%">
-                    <h3 class="mb"><i class="fa "></i> PACIENTES </h3>  
+                    <img src="img/frm - caja.png" width="10%">
+                    <h3 class="mb"><i class="fa "></i> CAJA </h3>  
                   </center>
-                 
-                  <div class="col" >
-                    <div class="col-xs-3" > 
-                      <input class="form-control"  type="text" placeholder="Nombre o DNI" >                            
-                    </div>
-                    <div class="col-xs-1">
-                      <input type="button" class="btn btn-primary" value="Buscar">
-                    </div>
-                    <br><br><br>
-                  </div>
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th>#</th>
-                            <th>Nombres</th>
-                            <th>Apellidos</th>
-                            <th>Edad</th>
-                            <th>DNI</th>
-                            <th>Celular</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>1</td>
-                            <td>Carlos</td>
-                            <td>Márquez Galván</td>
-                            <td>35</td>
-                            <td>70123456</td>
-                            <td>987654321</td>
-                            <td><input type="button" class="btn btn-primary" value="Datos de filiación" /></td>
-                            <td><input type="button" class="btn btn-primary" value="Historial"/></td>
-                          </tr>
 
-                          <tr>
-                            <td>2</td>
-                            <td>Marcos</td>
-                            <td>Vásquez Díaz</td>
-                            <td>53</td>
-                            <td>74153256</td>
-                            <td>983612321</td>
-                            <td><input type="button" class="btn btn-primary" value="Datos de filiación" /></td>
-                            <td><input type="button" class="btn btn-primary" value="Historial"/></td>
-                          </tr>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Motivo</th>
+                        <th>Especialidad</th>
+                        <th>Fecha</th>
+                        <th>Monto</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Consulta</td>
+                        <td>Psiquiatría</td>
+                        <td>03-01-20</td>
+                        <td>100</td>
+                        <td> <input type="button" class="btn btn-primary" value="Eliminar" /></td>
+                      </tr>
+                    </tbody>
+                  </table>
 
-                          <tr>
-                            <td>3</td>
-                            <td>Mariana</td>
-                            <td>Chávez Vértiz</td>
-                            <td>30</td>
-                            <td>74153293</td>
-                            <td>997654421</td>
-                            <td><input type="button" class="btn btn-primary" value="Datos de filiación" /></td>
-                            <td><input type="button" class="btn btn-primary" value="Historial"/></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </form>  
+                    </form> 
+                    <div style="text-align:right;">
+                      
+                      <label class="">Total S/.</label> 
+                      
+                      <input class="test"  type="text" placeholder="300" disabled >                            
+                      <input type="button" class="btn btn-primary" value="Pagar" />
+                      
+                    </div> 
                </div>
              </div>
             </div>
