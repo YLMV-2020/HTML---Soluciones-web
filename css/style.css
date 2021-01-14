@@ -22,6 +22,14 @@ Website: http://Alvarez.is/
     light:#ffffff;
 }
 
+.test{
+    width:80px;
+}
+
+.tx{
+    width:190px;
+}
+
 *{
     font-family: 'Chilanka',cursive;
 }
