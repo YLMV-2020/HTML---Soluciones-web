@@ -67,13 +67,7 @@ BAR CONTENIDO & CERRAR SESION
                     </a>
                 </li>
 
-                  <li class="mt">
-                    <a href="Caja paciente.html">
-                      <i class="fa fa-Consulta"></i>
-                      <span>Caja</span>
-                    </a>
-                      
-                  </li>
+                 
  
                 </ul>                
               </div>
@@ -128,37 +122,31 @@ BAR CONTENIDO & CERRAR SESION
                   <table class="table">
                     <thead>
                       <tr>
-                        <th>#</th>
-                        <th>Nombres</th>
-                        <th>Apellidos</th>
-                        <th>DNI</th>
-                        <th>Hora</th>
-                        <th>Motivo</th>
+                        <th>Nombre del doctor</th>
+                        <th>Fecha</th>
+                        <th>Hora de inicio</th>
+                        <th>Hora de fin</th>
                         <th>Estado</th> 
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>1</td>
-                        <td>Carlos</td>
-                        <td>Márquez Galván</td>
-                        <td>70123456</td>
-                        <td>4:00 p.m.</td>
-                        <td>Consulta</td>
+                        
+                        <td>Carlos Márquez Galván</td>
+                        <td>05/03/2020</td>
+                        <td>03:00 PM - 05:00 PM.</td>
                         <td>Atendido</td>
-                        <td><input type="button" class="btn btn-primary" value="Descargar Boleta"/></td>
+                        <td><a  href="VerResultadosPaciente.html" class="btn btn-primary" >Ver resultados</a></td>
                       </tr>
 
                       <tr>
-                        <td>2</td>
-                        <td>Mariana</td>
-                        <td>Chávez Vértiz</td>
-                        <td>74153293</td>
-                        <td>6:00 p.m.</td>
-                        <td>Control</td>
-                        <td>Pendiente</td>
-                        <td><input type="button" class="btn btn-primary" value="Pagar"/></td>
-                        <td><input type="button" class="btn btn-primary" value="Anular"/></td>
+                        
+                        <td>Pedro Chávez Vértiz</td>
+                        <td>05/05/2021</td>
+                        <td>5:00 PM - 07:00 PM</td>
+                        <td>Pendiente - Sin Pago</td>
+                        <td><a  href="PagarCita.html" class="btn btn-primary">Pagar</a></td>
+                        <td><input onclick="btnAnular()" type="button" class="btn btn-primary" value="Anular"/></td>
                       </tr>
                     </tbody>
                   </table>
@@ -170,6 +158,11 @@ BAR CONTENIDO & CERRAR SESION
           </section>
           </section>
           </section>
+          <script>
+            function btnAnular(){
+              alert('Su cita fue cancelada...');
+            }
+          </script>
           <script src="lib/jquery/jquery.min.js"></script>         
           <script src="lib/jquery-ui-1.9.2.custom.min.js"></script>
           <script src="lib/fullcalendar/fullcalendar.min.js"></script>

@@ -15,6 +15,8 @@
         <link href="css/style.css" rel="stylesheet">
         <link href="css/style-responsive.css" rel="stylesheet">
         <link rel="stylesheet" href="lib/bootstrap-wysihtml5/bootstrap-wysihtml5.css" type="text/css"/>
+        <script type="text/javascript" src="jquery-3.3.1.js"></script>
+
     </head>
     <body>
         <section id="container">
@@ -28,7 +30,7 @@ BAR CONTENIDO & CERRAR SESION
                     <a  class="logo"><b>CONSUL<span>TORIO </span></b></a>
                 <div class="top-menu">
                     <ul class="nav pull-right top-menu">
-                      <li><a class="logout" href="index medico.html">CERRAR SESIÓN</a></li>
+                      <li><a class="logout" href="index.html">CERRAR SESIÓN</a></li>
                     </ul>
                 </div>
             </header>
@@ -48,24 +50,32 @@ BAR CONTENIDO & CERRAR SESION
                   </div>
 
                   <li class="mt">
-                    <a href="Inicio medico.html">
+                    <a href="Inicio paciente.html">
                       <i class="fa fa-home"></i>
                       <span>Inicio</span>
                     </a>
                   </li>
                   <li class="mt">
-                      <a href="Pacientes medico.html">
+                      <a href="Info paciente paciente.html">
                       <i class="fa fa-patient"></i>
-                      <span>Pacientes</span>
+                      <span>Datos de filiación</span>
                     </a>
                   </li>
 
                   <li class="mt">
-                    <a href="Cita medico.html">
+                    <a href="Cita paciente.html">
                     <i class="fa fa-cita"></i>
                     <span>Citas</span>
                     </a>
                 </li>
+
+                  <li class="mt">
+                    <a href="Caja paciente.html">
+                      <i class="fa fa-Consulta"></i>
+                      <span>Caja</span>
+                    </a>
+                      
+                  </li>
  
                 </ul>                
               </div>
@@ -75,79 +85,81 @@ BAR CONTENIDO & CERRAR SESION
 *********************************************************************************************************************************************************** -->                   
       <section id="main-content">
       <section class="wrapper">
-            
+           
 <!-- **********************************************************************************************************************************************************
       CUERPO
 *********************************************************************************************************************************************************** -->            
         <div class="row mt">
-          <div class="col-lg-12">
-            <div class="form-panel">
-                <form class="form-horizontal  style-form" action="#">                  
-                  <br>
-                  <center>
-                    <img src="img/frm - paciente.png" width="10%">
-                    <h3 class="mb"><i class="fa "></i> PACIENTES </h3>  
-                  </center>
-                 
-                  <div class="col" >
-                    <div class="col-xs-3" > 
-                      <input class="form-control"  type="text" placeholder="Nombre o DNI" >                            
-                    </div>
-                    <div class="col-xs-1">
-                      <input type="button" class="btn btn-primary" value="Buscar">
-                    </div>
-                    <br><br><br>
-                  </div>
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th>#</th>
-                            <th>Nombres</th>
-                            <th>Apellidos</th>
-                            <th>Edad</th>
-                            <th>DNI</th>
-                            <th>Celular</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>1</td>
-                            <td>Carlos</td>
-                            <td>Márquez Galván</td>
-                            <td>35</td>
-                            <td>70123456</td>
-                            <td>987654321</td>
-                            <td><a href="Info paciente medico.html"><input type="button" class="btn btn-primary" value="Datos de filiación" /></a></td>
-                            <td><a href="VerHistorialDoctor.html" class="btn btn-primary" >Historial</a></td>
-                          </tr>
+            <div class="row mt">
+                <div class="col-lg-12">
+                    <center>
+                        <table class="table batle-active">
+                            <thead>
+                                <tr>
+                                    <th>Servicio</th>
+                                    <th>Monto</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
 
-                          <tr>
-                            <td>2</td>
-                            <td>Marcos</td>
-                            <td>Vásquez Díaz</td>
-                            <td>53</td>
-                            <td>74153256</td>
-                            <td>983612321</td>
-                            <td><a href="Info paciente medico.html"><input type="button" class="btn btn-primary" value="Datos de filiación" /></a></td>
-                            <td><a href="VerHistorialDoctor.html" class="btn btn-primary" >Historial</a></td>
-                          </tr>
+                            <tbody>
+                                <tr>
+                                    <td>Consulta Psiquiatrica</td>
+                                    <td>S/. 100.00</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Certificado medico</td>
+                                    <td>S/. 50.00</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><i><strong>Total</strong></i></td>
+                                    <td></td>
+                                    <td>S/. 150.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                     
+                        <br>
+                        
+                           
+                            <form>
+                                <h4>Imagen de la boleta de pago</h4>
+                                <input name="imagenBoleta" type="file" required/>
+                                <br>
+                                <br>
+                            <button href="Cita paciente.html" id="idConfirmarPago" onclick="ConfirmarPago()">Confirmar pago</button>
+                            </form>
+                        
+                    
+                        <script>
 
-                          <tr>
-                            <td>3</td>
-                            <td>Mariana</td>
-                            <td>Chávez Vértiz</td>
-                            <td>30</td>
-                            <td>74153293</td>
-                            <td>997654421</td>
-                            <td><a href="Info paciente medico.html"><input type="button" class="btn btn-primary" value="Datos de filiación" /></a></td>
-                            <td><a href="VerHistorialDoctor.html" class="btn btn-primary" >Historial</a></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </form>  
-               </div>
-             </div>
+                            function ConfirmarPago(){
+                                var img = document.getElementsByName('imagenBoleta');
+                                var btn = document.getElementById('idConfirmarPago');
+                                if($(img).val().length == 0){
+                                    return false;
+                                }
+                                else{
+                                    alert('Su pago ahora esta pendiente de confirmacion...')
+                                 
+
+                                }
+                                
+                            }
+                        </script>    
+                        
+                    </center>
+                </div>
+                
+                  
+                  
+                  
             </div>
+
+            
+        </div>
           </section>
           </section>
           </section>
@@ -163,6 +175,8 @@ BAR CONTENIDO & CERRAR SESION
           <script src="lib/common-scripts.js"></script>
           <!--script for this page-->
           <script type="text/javascript" src="lib/gritter/js/jquery.gritter.js"></script>
-          <script type="text/javascript" src="lib/gritter-conf.js"></script>                            
+          <script type="text/javascript" src="lib/gritter-conf.js"></script>         
+                        
     </body>
+    
 </html>

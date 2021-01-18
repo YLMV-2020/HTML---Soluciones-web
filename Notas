@@ -1,0 +1,6 @@
+
+
+
+Administrador -> gestionar pacientes, doctores, cajeros, citas (edit de todo basicamente)
+cajera -> se encarga de validar la imagen de la factura que el usuario envia al realizar
+    su pago, cambiado el estado a Pendiente - Pagado, debe poder ver citas y verificarlas

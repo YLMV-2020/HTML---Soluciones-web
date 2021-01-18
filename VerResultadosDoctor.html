@@ -66,88 +66,124 @@ BAR CONTENIDO & CERRAR SESION
                     <span>Citas</span>
                     </a>
                 </li>
- 
+
+                 
                 </ul>                
               </div>
             </aside>
 <!-- **********************************************************************************************************************************************************
       CUERPO
 *********************************************************************************************************************************************************** -->                   
-      <section id="main-content">
-      <section class="wrapper">
-            
+<section id="main-content">
+    <section class="wrapper">
+<div class="row mt">
+    <div class="row mt">
+        <div class="col-lg-12">
+
+            <div class="col">
+                <label class=" col-xs-1 col-xs-1 control-label">Hora de la cita</label> 
+                <div class="col-xs-3" > 
+                 
+                    <i><strong>8:58 AM</strong></i>
+                                       
+                </div>
+            </div>                                           
+            <div class="col">
+                <label class=" col-xs-1 col-xs-1 control-label">Observacion</label> 
+                <div class="col-xs-3" > 
+                  <i><strong>El paciente parece sufrir de mucha anciedad.</strong></i>                         
+                </div>
+            </div>                            
+           <div class="col">
+                <label class=" col-xs-1 col-xs-1 control-label">Motivo</label> 
+                <div class="col-xs-3" > 
+                  <i><strong>El responsable del paciente afirma que el motivo de la
+                    consulta es un episodio psicotico, que sufrio el
+                    paciente</strong></i>                           
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>   
+            <br>
+
+            <div class="col">
+                <label class=" col-xs-1 col-xs-1 control-label">Fecha</label> 
+                <div class="col-xs-3" > 
+                 
+                    <i><strong>01/02/2020</strong></i>
+                                       
+                </div>
+            </div>                                           
+            <div class="col">
+                <label class=" col-xs-1 col-xs-1 control-label">Descripcion</label> 
+                <div class="col-xs-3" > 
+                  <i><strong>El paciente precenta demencia cronica.</strong></i>                         
+                </div>
+            </div>                            
+           <div class="col">
+                <label class=" col-xs-1 col-xs-1 control-label">Examenes</label> 
+                <div class="col-xs-3" > 
+                  <i><strong>Evaluación psiquiátrica rutinaria, test de personalidad
+                    multiple.</strong></i>                           
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>   
+            <br>
+            <div class="col">
+                <label class=" col-xs-1 col-xs-1 control-label">Diagnostico</label> 
+                <div class="col-xs-3" > 
+                 
+                    <i><strong>El paciente debe ser internado con vigilancia las 24h del
+                        dia, ademas de tomar los medicametos prescritos.</strong></i>
+                                       
+                </div>
+            </div>                                           
+            <div class="col">
+                <label class=" col-xs-1 col-xs-1 control-label">Tratamiento</label> 
+                <div class="col-xs-3" > 
+                  <i><strong>Clonazepam X2 c/12h y Zatralina x2 c/24h hasta el proximo
+                    control.</strong></i>                         
+                </div>
+            </div>                            
+           
+            <br>
+            <br>
+            <br>   
+            <br>
+
+        </div>
+    </div>
+</div>
+<center>
+    <a class="btn btn-primary" href="Inicio medico.html">Regresar</a>
+</center>
+
+
+    <script>
+
+        function ConfirmarPago() {
+            var img = document.getElementsByName('imagenBoleta');
+            var btn = document.getElementById('idConfirmarPago');
+            if ($(img).val().length == 0) {
+                return false;
+            }
+            else {
+                alert('Su pago ahora esta pendiente de confirmacion...')
+
+
+            }
+
+        }
+    </script>
+
+</center>
 <!-- **********************************************************************************************************************************************************
       CUERPO
 *********************************************************************************************************************************************************** -->            
-        <div class="row mt">
-          <div class="col-lg-12">
-            <div class="form-panel">
-                <form class="form-horizontal  style-form" action="#">                  
-                  <br>
-                  <center>
-                    <img src="img/frm - paciente.png" width="10%">
-                    <h3 class="mb"><i class="fa "></i> PACIENTES </h3>  
-                  </center>
-                 
-                  <div class="col" >
-                    <div class="col-xs-3" > 
-                      <input class="form-control"  type="text" placeholder="Nombre o DNI" >                            
-                    </div>
-                    <div class="col-xs-1">
-                      <input type="button" class="btn btn-primary" value="Buscar">
-                    </div>
-                    <br><br><br>
-                  </div>
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th>#</th>
-                            <th>Nombres</th>
-                            <th>Apellidos</th>
-                            <th>Edad</th>
-                            <th>DNI</th>
-                            <th>Celular</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>1</td>
-                            <td>Carlos</td>
-                            <td>Márquez Galván</td>
-                            <td>35</td>
-                            <td>70123456</td>
-                            <td>987654321</td>
-                            <td><a href="Info paciente medico.html"><input type="button" class="btn btn-primary" value="Datos de filiación" /></a></td>
-                            <td><a href="VerHistorialDoctor.html" class="btn btn-primary" >Historial</a></td>
-                          </tr>
-
-                          <tr>
-                            <td>2</td>
-                            <td>Marcos</td>
-                            <td>Vásquez Díaz</td>
-                            <td>53</td>
-                            <td>74153256</td>
-                            <td>983612321</td>
-                            <td><a href="Info paciente medico.html"><input type="button" class="btn btn-primary" value="Datos de filiación" /></a></td>
-                            <td><a href="VerHistorialDoctor.html" class="btn btn-primary" >Historial</a></td>
-                          </tr>
-
-                          <tr>
-                            <td>3</td>
-                            <td>Mariana</td>
-                            <td>Chávez Vértiz</td>
-                            <td>30</td>
-                            <td>74153293</td>
-                            <td>997654421</td>
-                            <td><a href="Info paciente medico.html"><input type="button" class="btn btn-primary" value="Datos de filiación" /></a></td>
-                            <td><a href="VerHistorialDoctor.html" class="btn btn-primary" >Historial</a></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </form>  
-               </div>
-             </div>
-            </div>
+        
           </section>
           </section>
           </section>
